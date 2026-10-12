@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="ku" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f8f9fc">
+  <title>Wekhevî</title>
+  <meta name="description" content="Partiya Wekhevî a Dimuqratî a Kurd li Sûrya — حزب المساواة الديمقراطي الكردي في سوريا">
+  <link rel="icon" href="logo-mark.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Figtree:wght@400;500;600&family=Fraunces:opsz,wght@9..144,500;9..144,600&family=IBM+Plex+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap bar">
+    <a class="brand" href="#home">
+      <img src="logo-mark.png" alt="Wekhevî">
+    </a>
+    <button class="burger" id="burger" aria-label="Menu">&#9776;</button>
+    <nav id="nav">
+      <a href="#home" data-i18n="nav_home"></a>
+      <a href="#news" data-i18n="nav_news"></a>
+      <a href="#statements" data-i18n="nav_stmt"></a>
+      <a href="#about" data-i18n="nav_about"></a>
+      <a href="#leadership" data-i18n="nav_lead"></a>
+      <a href="#newspaper" data-i18n="nav_paper"></a>
+      <a href="#contact" data-i18n="nav_contact"></a>
+    </nav>
+    <div class="lang">
+      <button data-lang="ku">Kurdî</button>
+      <button data-lang="ar">العربية</button>
+      <button data-lang="en">EN</button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="hero" id="home">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <h1 id="party-name"></h1>
+        <p class="hero-lead" data-i18n="hero_title"></p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#news" data-i18n="nav_news"></a>
+          <a class="btn btn-ghost" href="#contact" data-i18n="nav_contact"></a>
+        </div>
+      </div>
+      <div class="hero-arch">
+        <span class="since-badge" data-i18n="hero_sub"></span>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="news">
+    <div class="wrap">
+      <h2 class="title" data-i18n="h_news"></h2>
+      <div class="grid" id="news-list"></div>
+    </div>
+  </section>
+
+  <section class="block alt" id="statements">
+    <div class="wrap">
+      <h2 class="title" data-i18n="h_stmt"></h2>
+      <div class="grid" id="stmt-list"></div>
+    </div>
+  </section>
+
+  <section class="block" id="about">
+    <div class="wrap about">
+      <h2 class="title" data-i18n="h_about"></h2>
+      <div class="about-text" id="about-text"></div>
+      <div class="facts">
+        <img class="about-logo" src="logo-full.png" alt="Partiya Wekhevî a Dimuqratî a Kurd Li Sûrya, 1957">
+        <div class="fact" data-i18n="founded"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block alt" id="leadership">
+    <div class="wrap">
+      <h2 class="title" data-i18n="h_lead"></h2>
+      <div id="secretary"></div>
+      <div class="subtitle" data-i18n="politburo"></div>
+      <div class="grid" id="politburo"></div>
+    </div>
+  </section>
+
+  <section class="block" id="newspaper">
+    <div class="wrap">
+      <h2 class="title" data-i18n="h_paper"></h2>
+      <p class="subtitle" id="paper-title"></p>
+      <div class="grid" id="paper-list"></div>
+    </div>
+  </section>
+
+  <section class="block alt" id="contact">
+    <div class="wrap">
+      <h2 class="title" data-i18n="h_contact"></h2>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <p data-i18n="contact_intro"></p>
+          <p><strong data-i18n="l_email"></strong>: <a id="c-email" href="#"></a></p>
+          <p><strong data-i18n="l_phone"></strong>: <span id="c-phone" dir="ltr"></span></p>
+          <p><strong data-i18n="l_address"></strong>: <span id="c-address"></span></p>
+        </div>
+        <form id="contact-form">
+          <input id="f-name" required data-i18n-ph="f_name" placeholder="">
+          <input id="f-email" type="email" required data-i18n-ph="f_email" placeholder="">
+          <textarea id="f-msg" required data-i18n-ph="f_msg" placeholder=""></textarea>
+          <button class="btn btn-primary" type="submit" data-i18n="send"></button>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <strong id="footer-name"></strong><br>
+    &copy; <span id="year"></span> — <span data-i18n="rights"></span>
+  </div>
+</footer>
+
+<script src="content.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
